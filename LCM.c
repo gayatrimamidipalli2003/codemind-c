@@ -1,11 +1,15 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,i=1;
-    scanf("%d%d",&a,&b);
-    while(a*i%b != 0)
+    int n1,n2,lcm;
+    scanf("%d%d",&n1,&n2);
+    lcm=(n1>n2)?n1:n2;
+    while(1)
     {
-        i++;
+        if(lcm%n1==0 && lcm%n2==0)
+        break;
+        lcm++;
     }
-    printf("%d",a*i);
+    printf("%d",lcm);
+    return 0;
 }
