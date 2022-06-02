@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+    int n,rev=0,revsqrev=0,sqnum,sqrev,temp,temp1,rem;
+    scanf("%d",&n);
+    sqnum=n*n;
+    temp=n;
+    while(temp)
+    {
+        rem=temp%10;
+        rev=rev*10+rem;
+        temp/=10;
+    }
+    sqrev=rev*rev;
+    temp1=sqrev;
+    while(temp1)
+    {
+        rem=temp1%10;
+        revsqrev=revsqrev*10+rem;
+        temp1/=10;
+    }
+    if(sqnum==revsqrev)
+    {
+        printf("True");
+    }
+    else
+    {
+        printf("False");
+    }
+}
