@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int r,c,sum=0,i,j;
+    int r,c,i,j,sum=0;
     scanf("%d%d",&r,&c);
     int a[r][c];
     for(i=0;i<r;i++)
