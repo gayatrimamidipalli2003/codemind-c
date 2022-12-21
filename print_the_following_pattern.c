@@ -3,18 +3,15 @@ int main()
 {
     int n;
     scanf("%d",&n);
-    for(int i=0;i<n;i++)
+    for(int i=1;i<(n+1);i++)
     {
-        for(int j=0;j<n;j++)
+        for(int j=1;j<(n-1);j++)
         {
-            if(i==j)
-            {
-                printf("0");
-            }
-            else
-            {
-                printf("x");
-            }
+            printf("%d",j);
+        }
+        for(int j=1;j<(n-2);j++)
+        {
+            printf("%d",j);
         }
         printf("
 ");
